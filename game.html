@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048</title> 
+    <link rel="stylesheet" href="game.css">
+    <script src="game.js" defer></script>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif; text-align: center;">
+    <h1 class="head">2048</h1>
+    <hr style="width: 500px;">
+    <div id="game-container">
+        <div id="board"></div> 
+        <div id="score-container">
+            <h2 id="score" style="color:#9a8b7b; padding-left: 20px;">Score: <span id="score-value" style="color:rgb(197, 39, 39);">0</span></h2>
+            <h2 id="high-score" style="color:#9a8b7b; padding-left: 20px;">High Score: <span id="high-score-value" style="color: rgb(197, 39, 39);">0</span></h2>
+        </div>
+        
+        <!-- Game Over Section -->
+        <div id="game-over" style="display: none;">
+            <h2>Game Over! Final Score: <span id="final-score"></span></h2>
+        </div>
+        
+        <!-- Retry Button -->
+      <!--   <button class="button" id="new-game">New Game</button> -->
+         <button class="button" id="new-game" style="display: none;">Retry</button>
+    </div>
+</body>
+</html>
